@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Obx(() => ThemeChange.themeController.theme.value
+            Obx(() => ThemeChange.themeController.pTheme.value
                 ? Text(
                     "This is an example Dark Theme",
                     style: Theme.of(context).textTheme.headlineMedium,
