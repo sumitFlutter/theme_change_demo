@@ -3,7 +3,7 @@
 👉 Here theme_change package link :- <a href="https://pub.dev/packages/theme_change">Official pub.dev </a><br>
 <h3>this package allows You to use custom Light and Dark Theme using built-in ThemeData class Otherwise You can use package provided Light and dark theme.</h3>
 <hr>
-<h3>Assign themeMode Like this and also call this getTheme method and define theme and dark theme Like this(it's necessary) </h3>
+<h3>Assign themeMode Like this and also call this getTheme method and (define theme and dark theme Like this(it's necessary) in GetMaterialApp)</h3>
 <image src="https://github.com/user-attachments/assets/a9577a22-03da-4abb-b3f6-d976bf02135c"/>
 <h3>Then after call this setTheme method Like this (it's necessary)</h3>
 <image src="https://github.com/user-attachments/assets/839ade34-af36-4db0-893c-cd360bc422a6" />
