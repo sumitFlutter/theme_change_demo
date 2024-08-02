@@ -3,9 +3,9 @@
 👉 Here theme_change package link :- <a href="https://pub.dev/packages/theme_change">Official pub.dev </a><br>
 <h3>this package allows You to use custom Light and Dark Theme using built-in ThemeData class Otherwise You can use package provided Light and dark theme.</h3>
 <hr>
-<h3>Assign themeMode Like this and also call this getData method it's necessary and define theme and dark theme </h3>
+<h3>Assign themeMode Like this and also call this getTheme method and define theme and dark theme Like this(it's necessary)</h3>
 <image src="https://github.com/user-attachments/assets/a9577a22-03da-4abb-b3f6-d976bf02135c"/>
-<h3>Assign themeMode Like this and call this setData method also it's necessary </h3>
+<h3>Assign themeMode and call this setTheme method also Like this (it's necessary)</h3>
 <image src="https://github.com/user-attachments/assets/839ade34-af36-4db0-893c-cd360bc422a6" />
 <h2> Warning :-</h2>
 <h3> all variable I used in this part of the package are RX Variables</h3>
@@ -18,7 +18,7 @@
  (..pTheme.value == false so current themeMode value is Light theme )</h3>
 <h3>By using above mentioned variable you can customise your app like using Switch Widget instead of Icon Widget</h3>
 <h3>By using above mentioned variable you can customise your application with condition management
-likw custom Image management (..pTheme.value?Image.asset(darktheme_image): Image.asset(lighttheme_image))</h3><hr>
+like custom Image management (..pTheme.value?Image.asset(darktheme_image): Image.asset(lighttheme_image))</h3><hr>
 <p>
 <img src="https://github.com/user-attachments/assets/76137672-ec4c-433e-b305-e32fdc354f54" height="400px" width="200px" />
 <img src="https://github.com/user-attachments/assets/86fcf705-b8d6-4815-b230-03587003efc8" height="400px" width="200px" />
