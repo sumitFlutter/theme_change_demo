@@ -15,9 +15,9 @@
 <h3>Then after call this setTheme method  (it's necessary) usng brand new ThemeObserver Widget Like this</h3>
 <img src="https://github.com/user-attachments/assets/baee7f3b-8222-4c4d-a2d2-6448239761a1" />
   <hr>
-<h2> New method for setTheme State </h2>
+<h2> old method for setTheme State </h2>
 <h3>Then after call this setTheme method Like this (it's necessary)</h3>
-<image src="https://github.com/user-attachments/assets/839ade34-af36-4db0-893c-cd360bc422a6" />
+<image src="https://github.com/user-attachments/assets/a22a6d7f-8200-4b1c-b00b-0fadc434a62c" />
  <hr>
 <h2> Warning :-</h2>
 <h3> all variable I used in this part of the package are RX Variables</h3>
