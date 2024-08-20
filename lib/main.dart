@@ -4,28 +4,15 @@ import 'package:theme_change/theme_change.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return Obx(() {
-      ThemeChange.themeController.getTheme();
-      return GetMaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        theme: ThemeChange.lightTheme,
-        darkTheme: ThemeChange.darkTheme,
-        themeMode: ThemeChange.themeController.mode.value,
-        home: const MyHomePage(title: 'theme_change Package Demo'),
+  runApp(
+    const ThemeMaterialAppGetX(
+      debugShowCheckedModeBanner: false,
+      title: 'GetX Demo theme_change',
+      home: MyHomePage(title: 'GetX Demo theme_change'),
+    )
       );
-    });
-  }
 }
+
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -48,15 +35,16 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Obx(() => ThemeChange.themeController.pTheme.value
+            ThemeObserver(child: ThemeChange.themeController.pTheme.value
                 ? Text(
-                    "This is an example Dark Theme",
-                    style: Theme.of(context).textTheme.headlineMedium,
-                  )
+              "This is an example Dark Theme",
+              style: Theme.of(context).textTheme.headlineMedium,
+            )
                 : Text(
-                    "This is an example Light Theme",
-                    style: Theme.of(context).textTheme.headlineMedium,
-                  ))
+              "This is an example Light Theme",
+              style: Theme.of(context).textTheme.headlineMedium,
+            ))
+
           ],
         ),
       ),
@@ -64,8 +52,8 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: () {
           ThemeChange.themeController.setTheme();
         },
-        child: Obx(
-          () => Icon(ThemeChange.themeController.themeMode.value),
+        child: ThemeObserver(
+         child:   Icon(ThemeChange.themeController.themeMode.value),
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
